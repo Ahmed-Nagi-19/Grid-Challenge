@@ -1,0 +1,88 @@
+div.grid {
+    background-color: #ddd;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "os os ah sh" "mo ma ma sh" "mo ez ez sh" "ha ib ga em";
+    gap: 20px;
+}
+
+div.grid > div {
+    padding: 20px;
+    font-size: larger;
+    font-weight: bold;
+    font-family: sans-serif;
+    position: relative;
+}
+
+div.grid div.osama-mohamed {
+    background-color: white;
+    grid-area: os;
+}
+div.grid div.ahmed-sayed {
+    background-color: white;
+    grid-area: ah;
+}
+div.grid div.shady-nabil {
+    background-color: black;
+    color: white;
+    grid-area: sh;
+}
+div.grid div.mohamed-ibrahim {
+    background-color: white;
+    grid-area: mo;
+}
+div.grid div.mahmoud-mohamed {
+    background-color: black;
+    color: white;
+    grid-area: ma;
+}
+div.grid div.ezz-eldin {
+    background-color: white;
+    grid-area: ez;
+}
+div.grid div.mohamed-sayed {
+    background-color: white;
+    grid-area: ha;
+}
+div.grid div.ibrahim-sayed {
+    background-color: black;
+    color: white;
+    grid-area: ib;
+}
+div.grid div.gamal-sayed {
+    background-color: white;
+    grid-area: ga;
+}
+div.grid div.eman-sayed {
+    background-color: white;
+    grid-area: em;
+}
+
+div.grid h5.work,
+div.grid p.sec-lorem {
+    color: gray;
+}
+
+div.grid p.sec-lorem {
+    font-weight: normal;
+}
+
+div.grid div.osama-mohamed::after,
+div.grid div.ahmed-sayed::after,
+div.grid div.shady-nabil::after,
+div.grid div.mohamed-ibrahim::after,
+div.grid div.mahmoud-mohamed::after,
+div.grid div.ezz-eldin::after,
+div.grid div.mohamed-sayed::after,
+div.grid div.ibrahim-sayed::after,
+div.grid div.gamal-sayed::after,
+div.grid div.eman-sayed::after {
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: rgb(255, 34, 71);
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
